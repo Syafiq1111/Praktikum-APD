@@ -1,2 +1,2 @@
 2409106009
-Syafiq Hafizh Farizi Tempat pengumpulan tugas
+Syafiq Hafizh Farizi A1'24 Tempat pengumpulan tugas
