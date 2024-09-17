@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106009_SyafiqHafizhFarizi_A1'24"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-16 12:52:22 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtRTc0UkJNUTI7MjAyNC0wOS0xNDsxMDo1ODo0NCBQTTsyNjQ1"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRTc0UkJNUTI7MjAyNC0wOS0xNjsxMjo1MjoyMiBQTTszOzI3NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="namalengkap, namapanggilan, hobi, asaldaerah, prodi" type="String" array="False" size=""/>
+            <declare name="nim, umur, modulus" type="Integer" array="False" size=""/>
+            <declare name="ipk" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan nama lengkap&quot;" newline="True"/>
+            <input variable="namalengkap"/>
+            <output expression="&quot;Masukkan nama panggilan&quot;" newline="True"/>
+            <input variable="namapanggilan"/>
+            <output expression="&quot;Masukkan nim&quot;" newline="True"/>
+            <input variable="nim"/>
+            <output expression="&quot;Masukkan umur&quot;" newline="True"/>
+            <input variable="umur"/>
+            <output expression="&quot;Masukkan hobi&quot;" newline="True"/>
+            <input variable="hobi"/>
+            <output expression="&quot;Masukkan asal daerah&quot;" newline="True"/>
+            <input variable="asaldaerah"/>
+            <output expression="&quot;Masukkan prodi&quot;" newline="True"/>
+            <input variable="prodi"/>
+            <output expression="&quot;Masukkan IPK&quot;" newline="True"/>
+            <input variable="ipk"/>
+            <assign variable="modulus" expression="nim mod 1000"/>
+            <output expression="&quot;Nama lengkap saya adalah &quot; &amp; namalengkap &amp; &quot; biasanya dipanggil &quot; &amp; namapanggilan &amp; &quot; nim saya adalah &quot; &amp; nim &amp; &quot;,saya berumur &quot; &amp; umur &amp; &quot; pada tahun ini, Saya berasal dari &quot; &amp; asaldaerah &amp; &quot; pada tahun ini saya keterima di Universitas Mulawarman prodi &quot; &amp; prodi &amp; &quot;, target ipk saya untuk lulus dari universitas ini yaitu &quot; &amp; ipk &amp;&#13;&#10;&#13;&#10;&quot; Nim terakhir saya yaitu &quot; &amp; modulus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

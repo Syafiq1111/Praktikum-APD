@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106009_Syafiq Hafizh Farizi_A1'24"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-09 04:44:08 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtRTc0UkJNUTI7MjAyNC0wOS0wOTswMjozMzoxNyBQTTsyNjQz"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRTc0UkJNUTI7MjAyNC0wOS0wOTswNDo0NDowOCBQTTszOzI3NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="HargaTiket, Pengunjung1, Pengunjung2, Pengunjung3, Diskon1, Diskon2, Diskon3" type="Integer" array="False" size=""/>
+            <assign variable="HargaTiket" expression="60000"/>
+            <declare name="TiketPengunjung1, TiketPengunjung2, TiketPengunjung3" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan umur pengunjung 1&quot;" newline="True"/>
+            <input variable="Pengunjung1"/>
+            <output expression="&quot;Masukkan umur pengunjung 2&quot;" newline="True"/>
+            <input variable="Pengunjung2"/>
+            <output expression="&quot;Masukkan umur pengunjung 3&quot;" newline="True"/>
+            <input variable="Pengunjung3"/>
+            <if expression="Pengunjung1 &lt; 18">
+                <then>
+                    <assign variable="Diskon1" expression="HargaTiket * 20/100"/>
+                    <assign variable="TiketPengunjung1" expression="HargaTIket - Diskon1"/>
+                    <if expression="Pengunjung2 &gt;18 and Pengunjung2 &lt;25">
+                        <then>
+                            <assign variable="Diskon2" expression="HargaTiket * 15/100"/>
+                            <assign variable="TiketPengunjung2" expression="HargaTiket - Diskon2"/>
+                            <if expression="Pengunjung3 &gt;25">
+                                <then>
+                                    <assign variable="Diskon3" expression="HargaTiket * 10/100"/>
+                                    <assign variable="TiketPengunjung3" expression="HargaTiket - Diskon3"/>
+                                </then>
+                                <else>
+                                    <assign variable="TiketPengunjung3" expression="HargaTiket"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="TiketPengunjung2" expression="HargaTiket"/>
+                            <if expression="Pengunjung3 &gt;25">
+                                <then>
+                                    <assign variable="DIskon3" expression="HargaTiket * 10/100"/>
+                                    <assign variable="TiketPengunjung3" expression="HargaTiket - Diskon3"/>
+                                </then>
+                                <else>
+                                    <assign variable="TiketPengunjung3" expression="HargaTiket"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="TiketPengunjung1" expression="HargaTiket"/>
+                    <if expression="Pengunjung2 &gt;18 and Pengunjung2 &lt;25">
+                        <then>
+                            <assign variable="Diskon3" expression="HargaTiket * 15/100"/>
+                            <assign variable="TiketPengunjung2" expression="HargaTiket - Diskon2"/>
+                            <if expression="Pengunjung3 &gt;25">
+                                <then>
+                                    <assign variable="Diskon3" expression="HargaTiket * 10/100"/>
+                                    <assign variable="TiketPengunjung3" expression="HargaTiket - Diskon3"/>
+                                </then>
+                                <else>
+                                    <assign variable="TiketPengunjung3" expression="HargaTiket"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="TiketPengunjung2" expression="HargaTiket"/>
+                            <if expression="Pengunjung3 &gt;25">
+                                <then>
+                                    <assign variable="Diskon3" expression="HargaTiket * 10/100"/>
+                                    <assign variable="TiketPengunjung3" expression="HargaTiket - Diskon3"/>
+                                </then>
+                                <else>
+                                    <assign variable="TiketPengunjung3" expression="HargaTiket"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Harga tiket yang harus dibayarkan adalah &quot;" newline="False"/>
+            <output expression="TiketPengunjung1 + TiketPengunjung2 + TiketPengunjung3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
