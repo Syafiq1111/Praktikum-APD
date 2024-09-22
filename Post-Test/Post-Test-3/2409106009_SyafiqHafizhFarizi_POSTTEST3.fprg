@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106009_SyafiqHafizhFarizi_posttest3"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-22 09:51:03 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtRTc0UkJNUTI7MjAyNC0wOS0yMjswOTowMDozNSBBTTsyNjI0"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRTc0UkJNUTI7MjAyNC0wOS0yMjswOTo1MTowMyBBTTsxOzI3MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jeniskelamin, aktivitasharian, umur" type="Integer" array="False" size=""/>
+            <declare name="beratbadan, tinggibadan, beratbadankonv, tinggibadankonv, levelaktivitasharian, bmrpria, bmrwanita, bmrp, bmrw" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan jenis kelamin anda (1 untuk pria) dan (2 untuk wanita)&quot;" newline="True"/>
+            <input variable="jeniskelamin"/>
+            <output expression="&quot;Masukka berat badan anda (Dalam satuan gram tanpa menggunakan koma)&quot;" newline="True"/>
+            <input variable="beratbadan"/>
+            <output expression="&quot;Masukkan tinggi badan anda (Dalam satuan kilometer)&quot;" newline="True"/>
+            <input variable="tinggibadan"/>
+            <output expression="&quot;Masukkan umur anda&quot;" newline="True"/>
+            <input variable="umur"/>
+            <assign variable="beratbadankonv" expression="beratbadan / 1000"/>
+            <assign variable="tinggibadankonv" expression="tinggibadan * 100000"/>
+            <output expression="&quot;Masukkan aktivitas harian anda: 1 untuk aktivitas minimal, 2 untuk aktivitas sedang, 3 untuk aktivitas tinggi&quot;" newline="True"/>
+            <input variable="aktivitasharian"/>
+            <if expression="aktivitasharian =1">
+                <then>
+                    <assign variable="levelaktivitasharian" expression="1.25"/>
+                </then>
+                <else>
+                    <if expression="aktivitasharian =2">
+                        <then>
+                            <assign variable="levelaktivitasharian" expression="1.36"/>
+                        </then>
+                        <else>
+                            <assign variable="levelaktivitasharian" expression="1.72"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="bmrpria" expression="(10 * beratbadankonv) + (6.26 * tinggibadankonv) - (5 * umur) + 5"/>
+            <assign variable="bmrwanita" expression="(10 * beratbadankonv) + (6.25 * tinggibadankonv ) - (5 * umur) - 161"/>
+            <if expression="jeniskelamin =1">
+                <then>
+                    <assign variable="bmrp" expression="bmrpria * levelaktivitasharian"/>
+                    <output expression="&quot;Jumlah kalori yang dibutuhkan adalah&quot; &amp; bmrp" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="bmrw" expression="bmrwanita * levelaktivitasharian"/>
+                    <output expression="&quot;Jumlah kalori yang dibutuhkan adalah &quot; &amp; bmrw" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
