@@ -4,9 +4,9 @@
         <attribute name="name" value="2409106009_SyafiqHafizhFarizi_posttest3"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-09-22 09:51:03 AM"/>
+        <attribute name="saved" value="2024-09-23 08:58:00 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtRTc0UkJNUTI7MjAyNC0wOS0yMjswOTowMDozNSBBTTsyNjI0"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtRTc0UkJNUTI7MjAyNC0wOS0yMjswOTo1MTowMyBBTTsxOzI3MzM="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRTc0UkJNUTI7MjAyNC0wOS0yMzswODo1ODowMCBQTTsyOzI3NTM="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -45,7 +45,7 @@
             <if expression="jeniskelamin =1">
                 <then>
                     <assign variable="bmrp" expression="bmrpria * levelaktivitasharian"/>
-                    <output expression="&quot;Jumlah kalori yang dibutuhkan adalah&quot; &amp; bmrp" newline="True"/>
+                    <output expression="&quot;Jumlah kalori yang dibutuhkan adalah &quot; &amp; bmrp" newline="True"/>
                 </then>
                 <else>
                     <assign variable="bmrw" expression="bmrwanita * levelaktivitasharian"/>
