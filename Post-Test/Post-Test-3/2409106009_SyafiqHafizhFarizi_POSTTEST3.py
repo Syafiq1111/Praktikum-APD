@@ -16,6 +16,8 @@ elif aktivitas_harian ==2:
     level_aktivitas_harian = 1.36
 elif aktivitas_harian ==3:
     level_aktivitas_harian = 1.72
+else:
+    print ("Invalid")
 
 
 bmr_pria = (10 * berat_badan_konv) + (6.25 * tinggi_badan_konv ) - (5 * umur) + 5
@@ -27,3 +29,5 @@ if jenis_kelamin ==1:
 elif jenis_kelamin ==2:
     bmr_w = (bmr_wanita * level_aktivitas_harian)
     print(f"Jumlah kalori yang dibutuhkan adalah {bmr_w} kalori")
+else:
+    print ("Invalid")
