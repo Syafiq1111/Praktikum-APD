@@ -22,6 +22,8 @@ while True:
     )
     hasil_pilih = input("Pilih Opsi Masukkan angka (1/2/3): ")
 
+    # LOGIN ADMIN= USERNAME=admin PASSWORD=admin1
+
     if hasil_pilih == "1":
         new_username = input("Masukkan username baru: ")
         new_password = input("Masukkan password baru: ")

@@ -1,13 +1,13 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2345" dy="31650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="10000" pageHeight="10000" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="30687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="10000" pageHeight="10000" math="0" shadow="0">
       <root>
         <object label="" id="WIyWlLk6GJQsqaUBKTNV-0">
           <mxCell />
         </object>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="zbg4pSojLmp6s8H_3mv2-16" value="FLOWCHART MANAJEMEN RENTAL KENDARAAN" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=16;labelBackgroundColor=none;fontStyle=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="2612.5" y="-29520" width="400" height="30" as="geometry" />
+          <mxGeometry x="2620" y="-29480" width="400" height="30" as="geometry" />
         </mxCell>
         <mxCell id="zbg4pSojLmp6s8H_3mv2-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#E07A5F;fontColor=default;align=center;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zbg4pSojLmp6s8H_3mv2-18" target="zbg4pSojLmp6s8H_3mv2-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -628,9 +628,7 @@
             <mxPoint x="1800" y="-27710" as="sourcePoint" />
             <mxPoint x="2864" y="-26120" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1750" y="-27350" />
-              <mxPoint x="1240" y="-27350" />
-              <mxPoint x="1240" y="-26110" />
+              <mxPoint x="1750" y="-26120" />
             </Array>
           </mxGeometry>
         </mxCell>
