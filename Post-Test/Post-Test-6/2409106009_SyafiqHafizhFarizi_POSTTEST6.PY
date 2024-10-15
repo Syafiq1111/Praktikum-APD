@@ -82,7 +82,7 @@ while True:
                         kendaraan[plat_nomor]["nama"] = input("Nama baru kendaraan: ")
                         print("Data kendaraan berhasil diupdate.")
                     else:
-                        print("Plat nomor kendaraan tidak valid.")
+                        print("Plat nomor kendaraan tidak valid")
 
                 elif pilih_admin == "4":
                     plat_nomor = input("Masukkan plat nomor kendaraan yang akan dihapus: ")
